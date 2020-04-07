@@ -192,19 +192,16 @@
 						var $modalImg = $(this),
 							$modal = $modalImg.parents('.modal');
 
+						setTimeout(function() {
 
-						$modal.addClass('loaded');
-						
-						// setTimeout(function() {
+							// No longer visible? Bail.
+								if (!$modal.hasClass('visible'))
+									return;
 
-						// 	// No longer visible? Bail.
-						// 		if (!$modal.hasClass('visible'))
-						// 			return;
+							// Set loaded.
+								$modal.addClass('loaded');
 
-						// 	// Set loaded.
-						// 		$modal.addClass('loaded');
-
-						// }, 275);
+						}, 275);
 
 					});
 
