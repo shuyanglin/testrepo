@@ -167,4 +167,20 @@
 				width: 100%;
 			}
 		}
+
+		@include breakpoint('<=xlarge') {
+			&.fill {
+				top: 0px;
+			}
+		}
+
+
+		@include breakpoint('<=large') {
+			&.fill {
+				top: 0px;
+			}
+		}
+
+	
+
 	}
