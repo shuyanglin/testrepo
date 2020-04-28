@@ -97,6 +97,7 @@
 
 		@include breakpoint('<=small') {
 			font-size: 0.7rem;
+			
 			height: (_size(element-height) * 1.1);
 			line-height: (_size(element-height) * 1.1);
 
@@ -111,5 +112,13 @@
 				height: (_size(element-height) * 1);
 				line-height: (_size(element-height) * 1);
 			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			font-size: 0.7rem;
+			width: 80%;
+			height: (_size(element-height) * 1);
+			line-height: (_size(element-height) * 1);
+
 		}
 	}
