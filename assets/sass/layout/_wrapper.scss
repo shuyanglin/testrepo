@@ -48,6 +48,7 @@
 								&:before {
 									right: ($pad * -1);
 									width: ($pad * 0.5);
+
 								}
 
 							// Terminator.
@@ -85,6 +86,25 @@
 								// Line.
 									&:before {
 										margin-left: calc(50vw - #{$pad * 2});
+										display: none;
+									}
+
+								// Headings.
+									h1, h2 {
+
+										// Line connector.
+											&:before {
+												right: ($pad * -1);
+												width: ($pad * 0.5);
+												display: none;
+											}
+
+										// Terminator.
+											&:after {
+												right: ($pad * -0.5);
+												display: none;
+											}
+
 									}
 
 								@include breakpoint('<=medium') {
@@ -325,7 +345,10 @@
 								// Line.
 									&:before {
 										left: auto;
+										display: none;
 									}
+
+	
 
 						}
 

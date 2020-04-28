@@ -2244,7 +2244,6 @@ ul.actions:not(.fixed) li .button.icon:before {
 }
 
 .emvideo {
-  padding-top: 25px;
   background-color: black;
 }
 .emvideo > iframe {
@@ -2796,6 +2795,7 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
 }
 #wrapper > section.intro > header:before {
   left: auto;
+  display: none;
 }
 #wrapper > section.intro > .content {
   height: 100vh;
@@ -2860,6 +2860,16 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
 }
 #wrapper > section.intro > header:before {
   margin-left: calc(50vw - 10rem);
+  display: none;
+}
+#wrapper > section.intro > header h1:before, #wrapper > section.intro > header h2:before {
+  right: -5rem;
+  width: 2.5rem;
+  display: none;
+}
+#wrapper > section.intro > header h1:after, #wrapper > section.intro > header h2:after {
+  right: -2.5rem;
+  display: none;
 }
 @media screen and (max-width: 1152px) {
   #wrapper > section.intro > header > * {
@@ -2914,6 +2924,16 @@ ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
   }
   #wrapper > section.intro > header:before {
     margin-left: calc(50vw - 8rem);
+    display: none;
+  }
+  #wrapper > section.intro > header h1:before, #wrapper > section.intro > header h2:before {
+    right: -4rem;
+    width: 2rem;
+    display: none;
+  }
+  #wrapper > section.intro > header h1:after, #wrapper > section.intro > header h2:after {
+    right: -2rem;
+    display: none;
   }
 }
 @media screen and (max-width: 1280px) and (max-width: 1152px) {
