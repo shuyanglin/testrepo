@@ -2248,7 +2248,7 @@ ul.actions:not(.fixed) li .button.icon:before {
   background-color: black;
 }
 .emvideo > iframe {
-  min-height: 1200px;
+  min-height: 1180px;
 }
 @media screen and (max-width: 1920px) {
   .emvideo > iframe {

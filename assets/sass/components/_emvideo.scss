@@ -10,7 +10,7 @@
 			padding-top: 25px;
 
 			> iframe{
-				min-height: 1200px;
+				min-height: 1180px;
 
 				@include breakpoint('<=xlarge') {
 					min-height: 1080px;
@@ -30,6 +30,5 @@
 			
 			background-color: black;
 		}
-
 
 
