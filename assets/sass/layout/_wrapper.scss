@@ -81,6 +81,7 @@
 								// Set width on all child elements and right-align.
 									> * {
 										width: (_size(header-width) - $pad);
+										
 									}
 
 								// Line.
@@ -91,6 +92,8 @@
 
 								// Headings.
 									h1, h2 {
+
+										margin-top: 1rem;
 
 										// Line connector.
 											&:before {
@@ -107,6 +110,23 @@
 
 									}
 
+									h4{
+										font-weight: 800;
+										width: (_size(header-width));
+										text-align: left;
+										background-color: white;
+										padding: 1rem;
+
+									}
+
+									.tagline{
+										
+										background-color: white;
+										padding: 2rem;
+
+									}
+
+
 								@include breakpoint('<=medium') {
 									> * {
 										width: 100%;
@@ -119,6 +139,7 @@
 								}
 
 						}
+
 					}
 
 				// Last.
@@ -171,8 +192,30 @@
 
 				// Intro.
 					&.intro {
+
+						
+
 						> header {
 							padding: (($pad * 1.25) + 3rem) $pad ($pad * 1.25) $pad;
+							background-image: url("../black-white-textured-seamless-pattern-background-repeating-round-circle_157822-291.jpg");
+
+							h4{
+								font-weight: 800;
+								width: (_size(header-width)/2);
+								text-align: left;
+								background-color: white;
+								padding: 1rem;
+
+							}
+
+							
+
+							.tagline{
+								
+								background-color: white;
+								padding: 2rem;
+
+							}
 						}
 					}
 
@@ -330,6 +373,7 @@
 				// Intro.
 					&.intro {
 						align-items: center;
+						background-image: url("../black-white-textured-seamless-pattern-background-repeating-round-circle_157822-291.jpg");
 
 						> header {
 							padding-top: 2.8rem;
@@ -348,6 +392,7 @@
 										display: none;
 									}
 
+								
 	
 
 						}
@@ -355,6 +400,7 @@
 						> .content {
 							height: 100vh;
 							max-width: none;
+							background-color: grey;
 						}
 					}
 
