@@ -1368,8 +1368,8 @@ header.video-bg {
 }
 
 .feature-note.right.bottom {
-    top: 290px;
-    right: 221px
+    top: 240px;
+    right: 205px
 }
 
 @media(max-width:1199px) {
@@ -1465,8 +1465,8 @@ header.video-bg {
 }
 
 .feature-note.left.top {
-    top: 115px;
-    left: 205px
+    top: 110px;
+    left: 60px
 }
 
 @media(max-width:1199px) {
@@ -1512,8 +1512,8 @@ header.video-bg {
 }
 
 .feature-note.left.bottom {
-    top: 395px;
-    left: 122px;
+    top: 355px;
+    left: 40px;
     height: auto
 }
 
