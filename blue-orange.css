@@ -597,7 +597,8 @@ footer.row .menu-rights p {
 }
 
 .product-img-gallery {
-    background: #f8f8f8
+    /*background: #f8f8f8*/
+    background: #fff;
 }
 
 #product-imgs .carousel-indicators li {

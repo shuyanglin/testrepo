@@ -3523,8 +3523,12 @@ footer.row {
     border-bottom: 1px solid
 }
 
-.product-desc .choose-form .option {
+.product-desc .choose-form {
     float: left
+}
+
+.option {
+    float: right;
 }
 
 @media(max-width:991px) {

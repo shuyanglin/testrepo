@@ -837,30 +837,46 @@
         <button class="mfp-close custom_close" title="Close (Esc)" type="button">&#215;</button>
         <div class="product-img-gallery">
             <div id="product-imgs" class="carousel slide" data-ride="carousel">
-               
+               <ol class="carousel-indicators">
+                <li data-target="#product-imgs" data-slide-to="0" class="active"></li>
+                <li data-target="#product-imgs" data-slide-to="1"></li>
+                </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="img/product_context.png" alt="watch-1">
+                        <img src="img/product_context.png" alt="cam-1 ">
+                    </div>
+                    <div class="item">
+                        <img src="img/product_studio.png" alt="cam-2">
                     </div>
                 </div>
             </div>
         </div>
         <div class="product-desc">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="POST" target="_top" class="choose-form row m0" id="paypal-regn">
+            <form action="sendEmail.php" method="POST" target="_top" class="choose-form row m0" id="paypal-regn">
+                <!-- https://www.paypal.com/cgi-bin/webscr -->
                 <div id="js-product-info" class="product-info">
                     
                     <h2 class="edition">Moment</h2>
                     
-                    <h2 class="price">£177 + £12/m <span class="label label-default">Pre-order by 1sy May 2020</span></h2>
+                    <h2 class="price">£200 + £15/m <span class="label label-default">only 44 more devices available</span></h2>
                     <div class="row m0 description">
                         <p>Estimate to ship at June 2020. Fully refundable.</p>
                     </div>
                     <div class="row m0 description">
-                        <p>contact us through hello@getmoment.today</p>
+                        <p>For more detail please contact us at hello@getmoment.today</p>
+                    </div>
+                    <div class="choose-options row m0" id="js-choose-color">
+                        <div class="option">
+                        <h4 class="form-label">Qty</h4>
+                         <input type="text" value="1" name="quantity" class="quanity">
+                        </div>
+                    </div>
+                    <div class="submit-area row m0">
+                    <a href="javascript:void(0);" class="btn btn-rounded btn-block" id="next-personal">Checkout</a>
                     </div>
 
                 </div>
-                <!-- <div class="personal-info" id="js-personal-info">
+                <div class="personal-info" id="js-personal-info">
                     <div class="form-group text-center"><a href="javascript:void(0);" class="btn" id="prev-product-info">Go Back</a></div>
                     <div class="row">
                         <div class="form-group col-sm-6">
@@ -886,7 +902,7 @@
                         <div class="form-group col-sm-6">
                             <input type="text" name="zip" class="form-control" placeholder="Zip Code" required>
                         </div>
-                    </div>
+                    
                     <div class="form-group">
                         <select class="form-control" name="Country" required>
                             <option selected value="">Choose a country</option>
@@ -896,7 +912,7 @@
                             <option value="India">India</option>
                         </select>
                     </div>
-                    <input type="hidden" name="cmd" value="_xclick">
+                    <!-- <input type="hidden" name="cmd" value="_xclick">
                     <input type="hidden" name="business" value="surjithctly-facilitator@gmail.com">
                     <input type="hidden" name="lc" value="IN">
                     <input type="hidden" name="item_name" value="Smart Watch Sports Edition">
@@ -909,15 +925,15 @@
                     <input type="hidden" name="shipping" value="10.00">
                     <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
                     <input type="hidden" name="on0" value="Color">
-                    <input type="hidden" name="on1" value="Size">
-                    <input type="hidden" name="notify_url" value="https://demo.web3canvas.com/themeforest/proland/php/verify-ipn.php">
-                    <input type="hidden" name="return" value="http://demo.web3canvas.com/themeforest/proland/success.html">
-                    <input type="hidden" name="cancel_return" value="http://demo.web3canvas.com/themeforest/proland/index_buy_paypal.html">
+                    <input type="hidden" name="on1" value="Size"> -->
+                    <!-- <input type="hidden" name="notify_url" value="https://demo.web3canvas.com/themeforest/proland/php/verify-ipn.php"> -->
+                    <input type="hidden" name="return" value="success.html">
+                    <!-- <input type="hidden" name="cancel_return" value="http://demo.web3canvas.com/themeforest/proland/index_buy_paypal.html"> -->
                     <div class="submit-area-2 row m0">
                         <button type="submit" class="btn btn-rounded js-preorder-btn btn-block"><span>Pay with Paypal</span></button>
                         <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                     </div>
-                </div> -->
+                </div>
             </form>
         </div>
     </div>
